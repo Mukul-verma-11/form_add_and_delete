@@ -1,0 +1,22 @@
+
+<table>
+<thead>
+<tr>
+<th> Name </th>
+<th> Branch </th>
+<th> Action </th>
+</tr>
+</thead>
+
+<tbody>
+<% @students.each_with_index do |student| %>
+
+<tr>
+<td> <%= student.name %> </td>
+<td> <%= student.branch %> </td>
+<td> <a href=<%="delete/#{student.name}" %>> Delete </a> </td>
+</tr>
+<% end %>
+</tbody>
+
+</table>

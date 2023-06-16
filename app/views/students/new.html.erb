@@ -1,0 +1,16 @@
+
+<%= form_with scope: :form_data, url: students_path, local: true do |f| %>
+
+<p> 
+<%= f.label :name %> <br>
+<%= f.text_field  :name %>
+</p>
+
+<p> 
+<%= f.label :branch %> <br>
+<%= f.text_field :branch %>
+</p>
+
+<%= f.submit %>
+
+<% end %>
